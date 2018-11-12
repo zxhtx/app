@@ -1,0 +1,62 @@
+.lt_amount{
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    width: 100%;
+    padding-left: 10px;
+    font-weight: bold;
+    color: red;
+}
+.lt_amount a{
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: red;
+    color: #fff;
+}
+
+/*修改列表样式*/
+#list{}
+.mui-scroll{
+    padding-bottom: 20px;
+}
+#list .mui-slider-handle a{
+    padding-right: 30px;
+    display: block;
+}
+#list .name{
+    /*white-space: normal;换行*/
+}
+#list .price{}
+#list .price .now{
+    color: red;
+}
+#list .price .old{
+    text-decoration: line-through;
+}
+#list .price .num{
+    float: right;
+}
+#list .size{}
+#list input{
+    position: absolute;
+    left: 15px;
+    bottom: 11px;
+}
+
+.mui-table-cell a img{
+
+    width: 100px;
+    height: 100px;
+}
+
+.lt_amount{
+    z-index: 99;
+}

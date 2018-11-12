@@ -1,0 +1,14 @@
+.lt_btnBox{
+    padding: 10px;
+}
+.lt_btnBox .logout{
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    background: #d8505c;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--全屏容器-->
+<div class="lt_container">
+    <!--头部-->
+    <header class="lt_topBar">
+        <a href="javascript:history.back();" class="left">
+            <span class="fa fa-chevron-left"></span>
+        </a>
+        <h3>分类</h3>
+        <a href="search.html" class="right">
+            <span class="fa fa-search"></span>
+        </a>
+
+    </header>
+
+
+    <!--内容-->
+    <div class="lt_content">
+        <div class="lt_wrapper">
+            <div class="lt_cateTop">
+                <!--TODO render-->
+            </div>
+            <div class="lt_cateSecond">
+                <!--TODO render-->
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <footer class="lt_tabs">
+        <a href="index.html"><span class="fa fa-home"><p>首页</p></span></a>
+        <a href="category.html"  class="now"><span class="fa fa-bars"><p>分类</p></span></a>
+        <a href="user/cart.html"><span class="fa fa-shopping-cart"><p>购物车</p></span></a>
+        <a href="user/index.html"><span class="fa fa-user"><p>个人中心</p></span></a>
+    </footer>
+
+</div>
+<script type="text/template" id="top">
+<ul>
+    {{each rows}}
+        <li class="{{$index===0?'now':''}}" data-id="{{$value.id}}"><a href="javascript:;">{{$value.categoryName}}</a></li>
+    {{/each}}
+</ul>
+
+</script>
+
+<script type="text/template" id="second">
+    <ul class="mui-clearfix">
+        {{if rows.length}}
+        {{each rows}}
+        <li><a href="#"><img src="{{$value.brandLogo}}" onerror="this.src='images/none01.jpg'" alt=""><p>{{$value.brandName}}</p></a></li>
+        {{/each}}
+        {{else}}
+        <li class="nd">该分类没有数据</li>
+        {{/if}}
+    </ul>
+    </script>
+
+</body>
+
+<script src="assets/art-template/template-web.js"></script>
+<script src="assets/mui/js/mui.min.js"></script>
+<script src="assets/zepto/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/category.js"></script>
+</html>

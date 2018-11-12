@@ -1,0 +1,99 @@
+/*顶部操作区域*/
+.lt_option{
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ddd;
+    border-top: 1px solid #ccc;
+    display: flex;
+}
+.lt_option > a{
+    width: 55px;
+    height: 100%;
+    text-align: center;
+    line-height: 54px;
+    color: #666;
+}
+.lt_option > div{
+    flex: 1;
+    padding-right: 10px;
+}
+.lt_option > div > a{
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin-top: 5px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+.lt_option > div > .addCart{
+    background: #991020;
+}
+.lt_option > div > .pay{
+    background: #fa672d;
+}
+
+/*商品详情的样式*/
+[class^="pro_"]{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.pro_name p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+}
+.pro_price .now{
+    color: red;
+    font-size: 20px;
+}
+.pro_price .old{
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.pro_size{
+    line-height: 30px;
+}
+.pro_size span{
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.pro_num{}
+.pro_num .change{
+    width: 92px;
+    height: 32px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pro_num .change span{
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+.pro_num .change input{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-bottom: 0;
+    padding: 0;
+}
+.pro_num > span{
+    font-size: 14px;
+}
+
+.mui-slider div img{
+    height: 350px;
+}

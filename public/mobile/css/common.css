@@ -1,0 +1,238 @@
+/*公共样式*/
+/*界面结构样式*/
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+
+.lt_container{
+    width: 100%;
+    height: 100%;
+    background: red;
+
+}
+
+.lt_topBar{
+    width: 100%;
+    height: 45px;
+    background: #069;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.lt_topBar a{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.lt_topBar .left{
+    left: 0;
+}
+.lt_topBar .right{
+    right: 0;
+
+}
+.lt_topBar h3{
+    text-align: center;
+    margin: 0;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+.lt_content{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    background: white;
+
+}
+
+.lt_content .lt_wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.lt_tabs{
+    width: 100%;
+    height: 55px;
+    background: #069;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.lt_tabs a{
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+
+.lt_tabs a span{
+    padding-top:10px;
+
+}
+
+.lt_tabs a p{
+    margin-bottom: 0;
+    color: white;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.lt_tabs a.now{
+    color: #fa0;
+}
+.lt_tabs a.now p{
+    color: #fa0;
+}
+/*商品容器样式*/
+.lt_product{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.lt_product ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lt_product ul li{
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+.lt_product ul li:nth-child(odd){
+    padding-right: 5px;
+}
+.lt_product ul li:nth-child(even){
+    padding-left: 5px;
+}
+
+.lt_proInfo{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 1px #ccc;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.lt_proInfo img{
+    width: 100%;
+    display: block;
+}
+
+.lt_proInfo .name{
+    padding: 0 5px;
+    color: #333;
+    text-align: left;
+}
+
+.lt_proInfo .price{
+    font-size: 12px ;
+    text-align: center;
+
+}
+
+.lt_proInfo .price span:first-child{
+    color: red;
+}
+.lt_proInfo .price span:last-child{
+    color: #ccc;
+    text-decoration: line-through;
+    padding-left: 5px;
+}
+.lt_proInfo button{
+    background: #069;
+    color: white;
+    border-color: #096;
+}
+
+
+
+/*搜索*/
+
+.lt_search{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.lt_search input{
+    height: 30px;
+    border: 1px solid #069;
+    background: white;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.lt_search a{
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    line-height: 30px;
+    background: #069;
+    color: white;
+    border-radius: 0 6px 6px 0;
+
+}
+
+.pro_size{
+    line-height: 30px;
+}
+.pro_size span{
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.pro_size span.now{
+    background: #fa0;
+}
+.pro_num{}
+.pro_num .change{
+    width: 92px;
+    height: 32px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pro_num .change span{
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+.pro_num .change input{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+.pro_num > span{
+    font-size: 14px;
+}

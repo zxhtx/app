@@ -1,0 +1,35 @@
+/*搜索历史*/
+.lt_history{
+    font-size: 12px;
+    padding: 0 10px;
+}
+.lt_history .head{
+    height: 30px;
+    line-height: 30px;
+}
+.lt_history .head > span{
+    color: #666;
+}
+.lt_history .head a{
+    float: right;
+    color: #666;
+}
+.lt_history ul{
+    width: 100%;
+    border: 1px dashed #ccc;
+    border-bottom: none;
+}
+.lt_history ul li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-left: 10px;
+    position: relative;
+}
+.lt_history ul li a{}
+.lt_history ul li span{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #666;
+}
